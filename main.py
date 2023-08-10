@@ -8,7 +8,7 @@ from fastapi import FastAPI, UploadFile
 
 app: FastAPI = FastAPI()
 
-MODEL=tf.keras.models.load_model("/2")
+MODEL=tf.keras.models.load_model("./2")
 
 
 class_names=["Early Blight", "Late Blight", "Healthy"]
