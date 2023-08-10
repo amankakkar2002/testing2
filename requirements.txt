@@ -6,3 +6,4 @@ pillow
 tensorflow-serving-api==2.6.5
 matplotlib
 numpy
+PIL
