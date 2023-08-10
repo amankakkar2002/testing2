@@ -36,8 +36,10 @@ async def predict(
         'confidence': float(confidence)
     }
 
-
-
-
 if __name__ == "__main__":
-    uvicorn.run(app, host='localhost', port=8000)
+    import os
+
+    # Get the port number from the environment variable if available (for deployment)
+    port = int(os.environ.get("PORT", 8000))
+    uvicorn.run(app, host="0.0.0.0", port=port)
+
